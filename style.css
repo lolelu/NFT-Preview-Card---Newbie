@@ -1,50 +1,179 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 50px;
+  color:#FFFFFF;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-body{
+body {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: #0d192c;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  display: inline-block;
+  margin: 0px;
+}
+img {
+  display: inline-block;
+}
+hr {
+  margin: 24px 0px;
+  height: 1px;
+  background-color: #2e405a;
+  border: 0px;
+}
+.card {
+    
+  width: 350px;
+  height: 596px;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  background-color: #15263f;
+}
+
+.container {
+  padding: 24px;
+}
+
+.itemImg{
+    position: relative;
+    height: 302px;
+    width: 302px;
+    margin: 0px;
+}
+.itemImg > img {
+    width: 302px;
+    height: 302px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    
+}
+.itemImg:hover .overlay{
+    opacity: 0.5;
+}
+.itemImg:hover .overlay img{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    height: 302px;
+    top: 0;
+    left: 0;
+    right: 0;
+     bottom: 0;
+     opacity: 0;
+   transition: .5s ease;
+  background-color: #00FFF8;;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+
+}
+.overlay>img{
+    opacity: 1;
     margin: auto;
-    padding: 0;
-    background-color: #0D192C;
-    font-family: 'Outfit', sans-serif;
-   
     
 }
 
-.card{
-    position: absolute;
-    width: 350px;
-    height: 596px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
-    background-color: #15263F;
+
+
+.textbox {
+  margin: 24px 0px 24px 0px;
+}
+.textbox > h1 {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.container{
-    padding:24px;
+.textbox > h1:hover{
+    cursor: pointer;
+    color: #00FFF8;
+
+}
+.textbox > p {
+  margin: 16px 0px 0px 0px;
+  color: #8bacd9;
+  font-weight: 300;
 }
 
-
-
-.itemImg > img{
-    max-width: 100%;
-    border-radius: 8px;
+.infobox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.textbox{
-    margin: 24px 0px 12px 0px ; 
+.nftValue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.textbox > h1{
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    font-style: normal;
-    font-size : 22px;
-    font-weight: 500;
+.nftValue > p {
+  font-weight: 600;
+  color: #00fff8;
+  line-height: 20px;
+  font-size: 16px;
+  margin-left: 6px;
 }
 
+.timeLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.timeLeft > p {
+  margin-left: 6px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #8bacd9;
+}
+
+.creator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.creator >img{
+    width: 33px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.creator >p {
+    margin-left: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8BACD9;
+}
+.creator > P > span{
+    color: #FFFFFF;
+}
+.creator > P > span:hover{
+    color: #00FFF8;
+    cursor: pointer;
+
+}
